@@ -2,7 +2,7 @@ import React from 'react';
 
 const Login = () => {
     return (
-        <div>selamat datang</div>
+        <div>selamat datang di intro to react</div>
     )
 }
 
