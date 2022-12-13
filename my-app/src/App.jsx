@@ -1,10 +1,10 @@
 import "./App.css";
 
-const Item = () => {
+const Item = (props) => {
   return (
     <div>
-      <h4>Session h#1</h4>
-      <p>Introduction to JSX</p>
+      <p>Name : {props.name}</p>
+      <p>City : {props.city}</p>
     </div>
   );
 };
@@ -12,9 +12,9 @@ const Item = () => {
 const App = () => {
   return (
     <div className="App">
-      <Item />
-      <Item />
-      <Item />
+      <Item name='Cristiano Ronaldo' city='Lisbon' />
+      <Item name='Harry Maguire' city='London' />
+      <Item name='Raphael Varane' city='Paris' />
     </div>
   );
 };
