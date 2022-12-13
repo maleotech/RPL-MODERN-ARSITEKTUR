@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
 
 const Login = () => {
-    return (
-        <div>selamat datang di intro to react</div>
-    )
-}
+  return (
+    <div>
+      <p>selamat datang</p>
+      <p>haha</p>
+    </div>
+  );
+};
 
-export default Login    
+export default Login;
