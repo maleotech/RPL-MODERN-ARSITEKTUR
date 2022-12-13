@@ -1,22 +1,30 @@
 import "./App.css";
+import React from "react";
 
-const Item = (props) => {
-  return (
-    <div>
-      <p>Name : {props.name}</p>
-      <p>City : {props.city}</p>
-    </div>
-  );
-};
+class Item extends React.Component {
+  render() {
+    return <h2>This is the item component</h2>;
+  }}
 
-const App = () => {
-  return (
-    <div className="App">
-      <Item name='Cristiano Ronaldo' city='Lisbon' />
-      <Item name='Harry Maguire' city='London' />
-      <Item name='Raphael Varane' city='Paris' />
-    </div>
-  );
-};
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {name: 'John'}
+  }
+  changeName = () => {
+    this.setState({name: 'Baihaqi'})
+  }
+  render() {
+    return (
+      <div className="App">
+        <h1>Hello my name is {this.state.name}</h1>
+        <Item />
+        <button
+          type="button"
+          onClick={this.changeName}>
+          Change Name
+        </button>
+     </div>);
+  }}
 
 export default App;
