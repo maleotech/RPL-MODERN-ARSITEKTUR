@@ -45,8 +45,11 @@
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #00adb5;
   margin-bottom: 8px;
+}
+.blog-preview h4 {
+  margin-top: 8px;
 }
 .blog-preview a{
   text-decoration: none;
@@ -55,7 +58,7 @@
 /* blog details page */
 .blog-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #00adb5;
   margin-bottom: 10px;
 }
 .blog-details div {
@@ -82,7 +85,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #00adb5;
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select {
