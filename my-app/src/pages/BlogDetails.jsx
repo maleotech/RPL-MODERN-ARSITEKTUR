@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-const Home = () => {
+const BlogDetails = () => {
+  const { id } = useParams();
   const [blogs, setBlogs] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8000/blogs")
+    fetch('http://localhost:8000/blogs/' + id)
       .then((res) => {
         if (!res.ok) {
           throw Error("could not fetch the data!");
@@ -20,21 +22,16 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home">
+    <div className="blog-details">
       {blogs && (
-        <div className="blog-list">
-          <h2>All Blogs</h2>
-          {blogs.map((blog) => (
-            <div className="blog-preview" key={blog.id}>
-              <h2>{blog.title}</h2>
-              <p>{blog.body}</p>
-              <h4>- Written by {blog.author}</h4>
-            </div>
-          ))}
-        </div>
+        <article>
+          <h2>{blogs.title}</h2>
+          <p>Written by {blogs.author}</p>
+          <div>{blogs.body}</div>
+        </article>
       )}
     </div>
   );
 };
 
-export default Home;
+export default BlogDetails;
