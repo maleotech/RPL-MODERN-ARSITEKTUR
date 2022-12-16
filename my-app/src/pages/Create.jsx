@@ -49,7 +49,6 @@ const Create = () => {
         { isLoading && <button>Adding blog...</button> }
       </form>
     </div>
-  );
-};
+  )}
 
 export default Create;
