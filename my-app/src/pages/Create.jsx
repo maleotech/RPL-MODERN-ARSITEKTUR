@@ -4,13 +4,10 @@ const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("cristiano");
-  const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = { title, body, author }
-
-    setIsLoading(true)
 
     fetch('http://localhost:8000/blogs', {
       method: 'POST',
@@ -19,7 +16,6 @@ const Create = () => {
     })
     .then(() => {
       console.log('new blog added');
-      setIsLoading(false)
     })
   }
 
@@ -45,8 +41,7 @@ const Create = () => {
           <option value="cistiano">cristiano</option>
           <option value="messi">messi</option>
         </select>
-        { !isLoading && <button>Add Blog</button> }
-        { isLoading && <button>Adding blog...</button> }
+        <button>Add Blog</button>
       </form>
     </div>
   )}

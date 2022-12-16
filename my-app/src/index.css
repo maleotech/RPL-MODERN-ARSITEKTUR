@@ -97,10 +97,12 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: #00adb5;
   color: #fff;
   border: 0;
-  padding: 8px;
-  border-radius: 8px;
+  margin-top: 15px;
+  padding-inline: 30px;
+  padding-block: 8px;  
+  border-radius: 10px;
   cursor: pointer;
 }
