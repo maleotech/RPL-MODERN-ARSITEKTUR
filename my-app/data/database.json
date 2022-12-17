@@ -11,12 +11,6 @@
       "body": "Blog ini merupakan lanjutan dari blog sebelumnya, mengenai bagaimana berkomunikasi dengan props",
       "author": "messi",
       "id": 2
-    },
-    {
-      "title": "API Request",
-      "body": "Blog ini akan menjelaskan cara bagaimana melakukan request API pada React JS",
-      "author": "cristiano",
-      "id": 3
     }
   ]
 }
