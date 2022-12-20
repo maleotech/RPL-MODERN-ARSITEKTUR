@@ -1,18 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Success } from "./pages";
-import { NavbarComponent } from "./components";
+import { ListCard } from "./components";
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavbarComponent />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/success" element={<Success />} />
-        </Routes>
-      </main>
-    </BrowserRouter>
+    <div style={{ padding: "30px" }}>
+      <h2>Aplikasi Kontak App</h2>
+      <hr />
+      <ListCard />
+    </div>
   );
 }
 

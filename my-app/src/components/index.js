@@ -1,6 +1,3 @@
-import Hasil from "./Hasil";
-import ListCategories from "./ListCategories";
-import NavbarComponent from "./NavbarComponent";
-import Menus from "./Menus";
+import ListCard from "./ListCard";
 
-export { Hasil, ListCategories, NavbarComponent, Menus }
+export { ListCard };
