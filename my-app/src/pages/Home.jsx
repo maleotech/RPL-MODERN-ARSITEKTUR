@@ -4,7 +4,7 @@ import { Hasil, ListCategories, Menus } from "../components";
 import axios from "axios";
 import swal from "sweetalert";
 
-const Home = () => {
+const Home = (props) => {
   const [menus, setMenus] = useState([]);
   const [selectedCategory, setSelectedCategories] = useState("Food");
   const [keranjangs, setKeranjangs] = useState([]);
@@ -138,7 +138,7 @@ const Home = () => {
                 ))}
             </Row>
           </Col>
-          <Hasil keranjangs={keranjangs} />
+          <Hasil keranjangs={keranjangs} {...props} />
         </Row>
       </Container>
     </div>
