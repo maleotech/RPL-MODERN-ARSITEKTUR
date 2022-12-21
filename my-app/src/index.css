@@ -1,22 +1,139 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* base styles */
+* {
   margin: 0;
-  font-family: "Public Sans", sans-serif;
+  font-family: "Quicksand";
   color: #333;
 }
-
 .navbar {
-  background-color: #036b70;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 85%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #00adb5;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: #00adb5;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 85%;
+  margin: 10px auto;
+  padding: 20px;
 }
 
-.category-aktif {
-  background-color: #036b70;
-  color: white;
+.content h2 {
+  font-size: 28px;
+  color: #00adb5;
+}
+.content .back {
+  margin-top: 20px;
+  background: #00adb5;
+  color: #fff;
+  border: 0;
+  width: 10%;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.btn-primary {
-  background-color: #036b70;
+.content .delete {
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  width: 10%;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #00adb5;
+  /* margin-bottom: 8px; */
+}
+.blog-preview h4 {
+  margin-top: 8px;
+}
+.blog-preview a {
+  text-decoration: none;
+}
+
+/* blog details page */
+.blog-details h2 {
+  font-size: 20px;
+  color: #00adb5;
+  margin-bottom: 10px;
+}
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #00adb5;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #00adb5;
+  color: #fff;
+  border: 0;
+  margin-top: 15px;
+  padding-inline: 30px;
+  padding-block: 8px;
+  border-radius: 10px;
+  cursor: pointer;
 }
