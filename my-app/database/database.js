@@ -66,24 +66,56 @@ client.connect((err, client) => {
   //   );
 
   //   show the specific data on blog collections
-  console.log(
-    db
-      .collection("blog")
-      .find({ _id: ObjectID("63a2c4aa09522ef62a57c6dd") })
-      .toArray((err, result) => {
-        console.log(result);
-      })
-  );
+  //   console.log(
+  //     db
+  //       .collection("blog")
+  //       .find({ _id: ObjectID("63a2c4aa09522ef62a57c6dd") })
+  //       .toArray((err, result) => {
+  //         console.log(result);
+  //       })
+  //   );
 
-  // update data
-  //   db.collection("blog").updateOne(
+  //   update data
+  //   const updatePromise = db.collection("blog").updateOne(
   //     {
   //       _id: ObjectID("63a2c4aa09522ef62a57c6dd"),
   //     },
   //     {
   //       $set: {
-  //         author: "messi",
+  //         author: "cristiano",
   //       },
   //     }
   //   );
+
+  //   updatePromise
+  //     .then((result) => {
+  //       console.log(result);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+
+  // delete one data
+  //   db.collection("blog")
+  //     .deleteOne({
+  //       _id: ObjectID("63a2c4aa09522ef62a57c6dd"),
+  //     })
+  //     .then((res) => {
+  //       console.log(res);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+
+  // delete many data
+  db.collection("blog")
+    .deleteOne({
+      author: "cristiano",
+    })
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
