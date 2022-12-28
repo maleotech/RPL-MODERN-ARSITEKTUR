@@ -1,0 +1,39 @@
+.ant-layout-sider {
+    background: #001e28;
+}
+
+.ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark, .ant-menu.ant-menu-dark .ant-menu-sub {
+    background: #001e28;
+}
+
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #ff7f50;
+}
+
+.ant-layout.ant-layout-has-sider {
+  min-height: 100vh;
+}
+
+.anticon svg {
+  font-size: 25px;
+}
+
+.ant-layout-header .anticon svg {
+    margin-left: 10px;
+}
+
+.ant-menu-title-content {
+    font-size: 18px;
+}
+
+.logo {
+    cursor: pointer;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.logo-title {
+    margin-top: 8px;
+    letter-spacing: 1.3px;
+    color: #ffffff;
+}
